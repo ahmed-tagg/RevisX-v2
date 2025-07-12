@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISPR: Rewriting the Code of Life | REVIZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        revizBlue: '#3B82F6',
+                        revizGreen: '#10B981',
+                        revizOrange: '#F59E0B',
+                        revizPurple: '#8B5CF6',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                        heading: ['"Poppins"', 'sans-serif'],
+                        article: ['"Source Serif Pro"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/articles.css">
+</head>
+<body class="font-sans">
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-revizBlue to-revizGreen flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">RZ</span>
+                </div>
+                <h1 class="font-heading text-2xl font-bold text-gray-800">REVIZ</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-revizBlue transition-colors font-medium">Home</a>
+                <a href="#" class="text-gray-600 hover:text-revizGreen transition-colors font-medium">Divisions</a>
+                <a href="#" class="text-gray-600 hover:text-revizOrange transition-colors font-medium">Articles</a>
+                <a href="#" class="text-gray-600 hover:text-revizPurple transition-colors font-medium">About</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 transition-colors font-medium">Submit</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <button class="hidden md:block bg-gradient-to-r from-revizBlue to-revizGreen text-white px-5 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-revizGreen/5 to-revizBlue/5 py-12">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="mb-6">
+                <span class="px-3 py-1 bg-revizGreen/10 text-revizGreen rounded-full text-sm font-medium">Medicine & Biology</span>
+            </div>
+            <h1 class="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-800 leading-tight">
+                CRISPR: Rewriting the Code of Life
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl">
+                How gene editing technology is revolutionizing medicine and what it means for our future.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 text-gray-600">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 rounded-full bg-revizGreen/20 mr-3 flex items-center justify-center">
+                        <i class="fas fa-user text-revizGreen"></i>
+                    </div>
+                    <div>
+                        <p class="font-medium">Dr. Sarah Chen</p>
+                        <p class="text-sm">Stanford University School of Medicine</p>
+                    </div>
+                </div>
+                <div class="text-sm">
+                    <span class="text-gray-500">Published:</span> May 28, 2023
+                </div>
+                <div class="text-sm">
+                    <span class="text-gray-500">Updated:</span> June 10, 2023
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-12 max-w-7xl">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <article class="flex-1">
+                <div class="article-content max-w-3xl mx-auto">
+                    <figure class="w-full bg-gray-100 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="CRISPR gene editing illustration" class="w-full h-auto">
+                        <figcaption>Illustration of CRISPR-Cas9 gene editing system (Credit: Science Photo Library)</figcaption>
+                    </figure>
+                    
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <button class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-download text-revizBlue"></i>
+                            Download PDF
+                        </button>
+                        <button class="flex items-center gap-2 px-4 py-2 bg-revizPurple text-white rounded-lg hover:bg-revizPurple/90 transition-colors">
+                            <i class="fas fa-comment-dots"></i>
+                            Communicate Creative
+                        </button>
+                        <div class="flex items-center gap-4 ml-auto">
+                            <button class="text-gray-500 hover:text-revizBlue transition-colors">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </button>
+                            <button class="text-gray-500 hover:text-revizBlue transition-colors">
+                                <i class="fab fa-facebook text-xl"></i>
+                            </button>
+                            <button class="text-gray-500 hover:text-revizBlue transition-colors">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="prose max-w-none">
+                        <p class="lead">The discovery of CRISPR-Cas9 has ushered in a new era of genetic engineering, offering unprecedented precision in editing DNA sequences. This revolutionary technology holds promise for treating genetic disorders, improving crops, and even potentially eliminating diseases.</p>
+                        
+                        <h2 id="introduction">Introduction to CRISPR</h2>
+                        <p>Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR) and CRISPR-associated protein 9 (Cas9) form a system that allows scientists to edit genomes with remarkable precision, efficiency, and flexibility. Originally discovered as part of the bacterial immune system, CRISPR-Cas9 has been adapted for use in eukaryotic cells, including human cells.</p>
+                        
+                        <figure class="float-right w-1/2 ml-8 mb-4">
+                            <img src="https://images.unsplash.com/photo-1581093450021-33f9a73c0f04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="DNA strand" class="w-full h-auto rounded-lg">
+                            <figcaption>DNA double helix structure (Credit: Getty Images)</figcaption>
+                        </figure>
+                        
+                        <p>The CRISPR system works by using a small piece of RNA sequence (guide RNA) to direct the Cas9 enzyme to a specific location in the genome. Once there, Cas9 cuts both strands of the DNA at that point. The cell's natural repair mechanisms then kick in to repair the break, during which scientists can introduce desired changes to the DNA sequence.</p>
+                        <blockquote> "CRISPR is to genetic engineering what the PCR machine was to DNA replication—a complete game changer that makes the previously impossible suddenly routine." — Dr. Jennifer Doudna, Nobel Laureate </blockquote>
+                        <h2 id="mechanism">Mechanism of Action</h2>
+                        <p>The CRISPR-Cas9 system consists of two key components:</p>
+                        <ol>
+                            <li><strong>Guide RNA (gRNA):</strong> A short synthetic RNA composed of a scaffold sequence necessary for Cas9 binding and a user-defined ∼20 nucleotide spacer that defines the genomic target to be modified.</li>
+                            <li><strong>Cas9 Nuclease:</strong> An enzyme that creates double-strand breaks in DNA at locations specified by the gRNA.</li>
+                        </ol>
+                        <h3 id="targeting">Targeting Specificity</h3>
+                        <p>The specificity of CRISPR-Cas9 comes from the gRNA, which recognizes and binds to a specific 20-nucleotide sequence in the genome. For the Cas9 enzyme to cut, the target sequence must also contain a protospacer adjacent motif (PAM) immediately following the targeted sequence.</p>
+                        <h3 id="repair">DNA Repair Pathways</h3>
+                        <p>After Cas9 induces a double-strand break, the cell repairs the damage through one of two primary mechanisms:</p>
+                        <ul>
+                            <li><strong>Non-homologous end joining (NHEJ):</strong> An error-prone repair process that often results in insertions or deletions (indels) that disrupt the gene.</li>
+                            <li><strong>Homology-directed repair (HDR):</strong> A precise repair mechanism that uses a donor DNA template to introduce specific changes at the break site.</li>
+                        </ul>
+                        <h2 id="applications">Therapeutic Applications</h2>
+                        <p>CRISPR technology has shown remarkable potential in treating various genetic disorders:</p>
+                        <h3 id="sickle-cell">Sickle Cell Disease</h3>
+                        <p>Clinical trials have demonstrated that CRISPR can be used to edit hematopoietic stem cells to produce fetal hemoglobin, effectively curing sickle cell disease in some patients.</p>
+                        <h3 id="cancer">Cancer Immunotherapy</h3>
+                        <p>Researchers are using CRISPR to engineer T cells with enhanced cancer-fighting capabilities, creating personalized immunotherapies for various cancers.</p>
+                        <h3 id="eye">Inherited Eye Diseases</h3>
+                        <p>Direct injection of CRISPR components into the eye has shown promise in treating inherited retinal diseases like Leber congenital amaurosis.</p>
+                        <h2 id="ethics">Ethical Considerations</h2>
+                        <p>While CRISPR offers tremendous potential, it also raises significant ethical questions:</p>
+                        <h3 id="germline">Germline Editing</h3>
+                        <p>The possibility of making heritable changes to the human genome raises concerns about unintended consequences and the potential for "designer babies."</p>
+                        <h3 id="equity">Equity and Access</h3>
+                        <p>Ensuring equitable access to these powerful technologies is crucial to prevent exacerbating existing health disparities.</p>
+                        <h3 id="off-target">Off-Target Effects</h3>
+                        <p>While highly precise, CRISPR can sometimes make unintended edits at other locations in the genome, which could lead to unforeseen consequences.</p>
+                    </div>
+                </div>
+            </article>
+
+            <aside class="w-full lg:w-1/4 sticky-sidebar h-fit bg-gray-50 p-6 rounded-xl shadow-sm">
+                <h3 class="font-heading text-xl font-bold text-gray-800 mb-4">Table of Contents</h3>
+                <nav>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="toc-item"><a href="#introduction" class="hover:text-revizBlue transition-colors">Introduction to CRISPR</a></li>
+                        <li class="toc-item"><a href="#mechanism" class="hover:text-revizBlue transition-colors">Mechanism of Action</a>
+                            <ul class="ml-4 mt-2 space-y-2 text-sm">
+                                <li class="toc-item"><a href="#targeting" class="hover:text-revizBlue transition-colors">Targeting Specificity</a></li>
+                                <li class="toc-item"><a href="#repair" class="hover:text-revizBlue transition-colors">DNA Repair Pathways</a></li>
+                            </ul>
+                        </li>
+                        <li class="toc-item"><a href="#applications" class="hover:text-revizBlue transition-colors">Therapeutic Applications</a>
+                            <ul class="ml-4 mt-2 space-y-2 text-sm">
+                                <li class="toc-item"><a href="#sickle-cell" class="hover:text-revizBlue transition-colors">Sickle Cell Disease</a></li>
+                                <li class="toc-item"><a href="#cancer" class="hover:text-revizBlue transition-colors">Cancer Immunotherapy</a></li>
+                                <li class="toc-item"><a href="#eye" class="hover:text-revizBlue transition-colors">Inherited Eye Diseases</a></li>
+                            </ul>
+                        </li>
+                        <li class="toc-item"><a href="#ethics" class="hover:text-revizBlue transition-colors">Ethical Considerations</a>
+                            <ul class="ml-4 mt-2 space-y-2 text-sm">
+                                <li class="toc-item"><a href="#germline" class="hover:text-revizBlue transition-colors">Germline Editing</a></li>
+                                <li class="toc-item"><a href="#equity" class="hover:text-revizBlue transition-colors">Equity and Access</a></li>
+                                <li class="toc-item"><a href="#off-target" class="hover:text-revizBlue transition-colors">Off-Target Effects</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </div>
+
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4 max-w-5xl text-center">
+            <h2 class="font-heading text-3xl font-bold text-gray-800 mb-8">
+                Related <span class="text-revizOrange">Articles</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1530932225679-b1d64c0f3a61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Space Exploration" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">The Future of Space Exploration</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Discover the next frontiers in human spaceflight and interstellar travel.
+                    </p>
+                    <a href="#" class="text-revizBlue hover:underline font-medium">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1542831371-d10be133c99a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Artificial Intelligence" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Understanding AI Ethics</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Exploring the moral implications of advanced artificial intelligence.
+                    </p>
+                    <a href="#" class="text-revizBlue hover:underline font-medium">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1507663261765-a868461877dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Climate Change Solutions" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Climate Change Solutions</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Innovative approaches to combat global warming and environmental degradation.
+                    </p>
+                    <a href="#" class="text-revizBlue hover:underline font-medium">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-heading text-lg font-bold text-white mb-4">REVIZ</h3>
+                    <p class="text-sm">
+                        A leading science journal dedicated to inspiring young minds with cutting-edge research and accessible scientific knowledge.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-heading text-lg font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Articles</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Divisions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-heading text-lg font-bold text-white mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">FAQ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Help Center</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-heading text-lg font-bold text-white mb-4">Newsletter</h3>
+                    <p class="text-sm mb-4">Stay updated with our latest articles and news.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none w-full text-gray-900">
+                        <button type="submit" class="bg-revizGreen text-white px-4 py-2 rounded-r-lg hover:bg-revizGreen/90 transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">
+                    © 2023 RevisX Science Journal. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/articles.js"></script>
+</body>
+</html>
